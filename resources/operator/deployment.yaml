@@ -17,7 +17,7 @@ spec:
       serviceAccountName: eduk8s
       containers:
       - name: eduk8s
-        image: quay.io/eduk8s/eduk8s-operator:develop
+        image: projects.registry.vmware.com/educates/educates-operator-test:210608.182918.84fbf29
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
