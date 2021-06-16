@@ -9,3 +9,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: eduk8s
+  namespace: eduk8s
