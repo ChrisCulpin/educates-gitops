@@ -12,17 +12,11 @@ For more comprehesive documentation on how to deploy and use Educates, see:
 Create an application on you ArgoCD Server:
 
 ```
-argocd app create educates-operator --sync-policy auto \
-    --repo https://github.com/educates/educates-gitops.git \ 
-    --revision gitops --path v1 --dest-namespace eduk8s \
-    --dest-server https://l4lk70lb74sd307ii9hj5px8iukm-k8s-1912902137.us-east-1.elb.amazonaws.com:443 
+argocd app create educates-operator --sync-policy auto --repo https://github.com/educates/educates-gitops.git --revision gitops --path v1 --dest-namespace eduk8s --dest-server https://l4lk70lb74sd307ii9hj5px8iukm-k8s-1912902137.us-east-1.elb.amazonaws.com:443 
 ```
 
 Deploy sample workshop:
 
 ```
-argocd app create lab-markdown-sample --sync-policy auto \
-    --repo https://github.com/educates/lab-markdown-sample.git \
-    --path resources \
-    --dest-server https://l4lk70lb74sd307ii9hj5px8iukm-k8s-1912902137.us-east-1.elb.amazonaws.com:443
+argocd app create lab-markdown-sample --sync-policy auto --repo https://github.com/educates/lab-markdown-sample.git --path resources --dest-server https://l4lk70lb74sd307ii9hj5px8iukm-k8s-1912902137.us-east-1.elb.amazonaws.com:443
 ```
