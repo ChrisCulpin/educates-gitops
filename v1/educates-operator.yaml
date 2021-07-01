@@ -1392,7 +1392,7 @@ spec:
       serviceAccountName: eduk8s
       containers:
       - name: eduk8s
-        image: projects.registry.vmware.com/educates/educates-operator-test:210608.182918.84fbf29
+        image: projects.registry.vmware.com/educates/educates-operator-dev:210701.195451.2143800
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
